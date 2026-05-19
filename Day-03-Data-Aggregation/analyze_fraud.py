@@ -3,9 +3,9 @@ import pandas as pd
 def run_fraud_analysis():
     try:
         try:
-            df = pd.read_csv("Day-02-Fraud-Detection/flagged_fraud_cases.csv")
+            df = pd.read_csv("Day-02-Fraud-Detection/raw_transactions.csv")
         except FileNotFoundError:
-            df = pd.read_csv("flagged_fraud_cases.csv")
+            df = pd.read_csv("raw_transactions.csv")
             
         print("\n📊 --- E-COMMERCE FRAUD ANALYSIS REPORT --- 📊\n")
         
@@ -25,7 +25,7 @@ def run_fraud_analysis():
             print(f"   • {country}: {count} cases")
             
     except FileNotFoundError:
-        print("❌ Error: Could not find 'flagged_fraud_cases.csv' anywhere in this directory.")
+        print("❌ Error: Could not find 'raw_transactions.csv' anywhere in this directory.")
 
 if __name__ == "__main__":
     run_fraud_analysis()

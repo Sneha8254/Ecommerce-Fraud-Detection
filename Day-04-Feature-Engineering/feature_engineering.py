@@ -5,10 +5,10 @@ print("🚀 Starting Day 4: Feature Engineering & Behavioral Profiling...")
 
 # 1. Load the dataset
 try:
-    df = pd.read_csv("flagged_fraud_cases.csv")
+    df = pd.read_csv("../Day-03-Data-Aggregation/raw_transactions.csv")
     print(f"✅ Successfully loaded dataset with {len(df)} rows.")
 except FileNotFoundError:
-    print("❌ Error: 'flagged_fraud_cases.csv' not found.")
+    print("❌ Error: '../Day-03-Data-Aggregation/raw_transactions.csv' not found.")
     exit()
 
 # Ensure timestamp is in datetime format for time-based metrics

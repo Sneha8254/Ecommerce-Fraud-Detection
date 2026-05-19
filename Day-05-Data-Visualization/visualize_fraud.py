@@ -6,7 +6,7 @@ import os
 print("📊 Starting Day 5: Data Visualization & Risk Reporting...")
 
 # 1. Load the engineered dataset from the Day 4 folder
-data_path = "Day-04-Feature-Engineering/engineered_fraud_data.csv"
+data_path = "../Day-04-Feature-Engineering/engineered_fraud_data.csv"
 if not os.path.exists(data_path):
     print(f"❌ Error: Could not find {data_path}. Please check your folder structure.")
     exit()
